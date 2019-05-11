@@ -3,10 +3,10 @@ class SnippetsCustomPostType {
 
   public function __construct() {
     add_action('init', array($this, 'create_snippets_cpt'));
+    add_action('init', array($this, 'create_snippets_taxonomy'));
   }
 
   public function create_snippets_cpt() {
-
     $labels = array(
       'name' => __('Snippets'),
       'singular_name' => __('Snippet'),
@@ -57,6 +57,28 @@ class SnippetsCustomPostType {
     );
 
     register_post_type('snippets', $args);
+  }
+
+  public function create_snippets_taxonomy() {
+    $labels = array(
+      'name' => __('Snippet Tags'),
+      'singular_name' => __('Snippet Tag'),
+      'parent_item_colon' => __('Parent Snippet Tag:'),
+      'all_items' => __('All Snippet Tags'),
+      'add_new_item' => __('Add New Snippet Tag'),
+      'new_item' => __('New Snippet Tag'),
+      'edit_item' => __('Edit Snippet Tag'),
+      'update_item' => __('Update Snippet Tag'),
+      'view_item' => __('View Snippet Tag'),
+      'search_items' => __('Search Snippet Tags'),
+    );
+
+    $args = array(
+      'label' => __('Snippet Tag'),
+      'labels' => $labels
+    );
+
+    register_taxonomy('snippet_tags', array('snippets'), $args);
   }
 
 }
