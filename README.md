@@ -4,7 +4,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/dcangulo/snippets-custom-post-type/pulls)
 [![GPLv2 license](https://img.shields.io/badge/License-GPLv2-blue.svg)](LICENSE)
 
-**Snippets Custom Post Type** adds a custom post type named "Snippets" for [www.davidangulo.xyz](https://www.davidangulo.xyz/)
+**Snippets Custom Post Type** adds a custom post type named "Snippets" for [www.davidangulo.xyz](https://www.davidangulo.xyz/snippets)
 
 ## Installation
 

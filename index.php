@@ -3,7 +3,7 @@
   Plugin Name: Snippets Custom Post Type
   Plugin URI: https://www.davidangulo.xyz/
   Description: Adds a custom post type named "Snippets" for www.davidangulo.xyz
-  Version: 1.0.0
+  Version: 1.0.1
   Author: David Angulo
   Author URI: https://www.davidangulo.xyz/
   Requires at least: 5.1.1
